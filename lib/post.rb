@@ -12,10 +12,7 @@ class Post
   end
   
   def author_name
-    if self.author.name = undefined
-      return nil
-    else
-      self.author.name
-    end
+    self.author.name if self.author.name != undefined
+    
   end
 end
